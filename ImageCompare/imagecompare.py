@@ -143,6 +143,7 @@ class ImageCompare(object):
         placeholder_file = kwargs.pop('placeholder_file', None)
         mask = kwargs.pop('mask', None)
         self.DPI = int(kwargs.pop('DPI', self.DPI))
+        self.threshold = float(kwargs.pop('threshold', self.threshold))
         reference_run = BuiltIn().get_variable_value('${REFERENCE_RUN}', False)
 
         if reference_run and (os.path.isfile(test_image) == True):
