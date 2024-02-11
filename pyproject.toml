@@ -11,7 +11,7 @@ readme = "./docs/README.md"
 homepage = "https://github.com/manykarim/robotframework-imagecompare"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.12"
+python = ">=3.9,<3.13"
 opencv-python-headless = "*"
 robotframework = ">=4"
 numpy = "*"
